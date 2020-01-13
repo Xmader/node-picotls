@@ -66,12 +66,12 @@ const build = async () => {
     await execAsync("git apply deps/picotls.patch")
 
     await execAsync("node-gyp rebuild")
+}
 
+build().finally(async () => {
     // clean up
     await execAsync("git apply deps/picotls.patch --reverse")
     if (process.platform == "win32") {
         await execAsync("git apply deps/picotlsvs_sln.patch --reverse")
     }
-}
-
-build()
+})
