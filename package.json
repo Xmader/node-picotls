@@ -1,0 +1,33 @@
+{
+  "name": "picotls",
+  "version": "0.1.0",
+  "description": "Node.js binding for picotls",
+  "main": "picotls.js",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.6"
+  },
+  "scripts": {
+    "install": "node tool/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xmader/node-picotls.git"
+  },
+  "keywords": [
+    "https",
+    "tls",
+    "network",
+    "esni"
+  ],
+  "author": "Xmader",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/Xmader/node-picotls/issues"
+  },
+  "homepage": "https://github.com/Xmader/node-picotls#readme"
+}
